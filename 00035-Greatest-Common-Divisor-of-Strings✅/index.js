@@ -20,7 +20,3 @@ function gcdOfStrings(str1, str2) {
     // The largest common divisor string is the prefix of length gcdLength
     return str1.substring(0, gcdLength);
 }
-
-
-
-console.log(gcdOfStrings(str1,str2));

@@ -1,7 +1,4 @@
-/**
- * @param {number} n
- * @return {string[]}
- */
+
 var fizzBuzz = function(n) {
     let out=[]
     for (let i = 1; i <= n; i++) {
@@ -18,5 +15,5 @@ var fizzBuzz = function(n) {
             out.push(`${i}`)
         }
     }
-    return out
+    return out;
 };

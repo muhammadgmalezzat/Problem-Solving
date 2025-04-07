@@ -3,15 +3,7 @@ var extraCandies = 3;
 
 var kidsWithCandies = function(candies, extraCandies) {
     const maxNum = Math.max(...candies);
-    let result = [];
-    for (i = 0; i < candies.length; i++){
-        if (candies[i]+extraCandies >= maxNum) {
-            result.push(true)
-        } else {
-            result.push(false)
-        }
-    }
-    return result;
+    return candies.map(candy => candy + extraCandies >= maxNum);
 };
 
-console.log(kidsWithCandies(candies,extraCandies))
+
